@@ -74,6 +74,9 @@ typedef NS_ENUM(NSInteger, zhPopupSlideStyle) {
 /// Content view whether to allow drag, default is NO
 @property (nonatomic, assign) BOOL allowPan; // 1.The view will support dragging when popup view of position is at the center of the screen or at the edge of the screen. 2.The pan gesture will be invalid when the keyboard appears.
 
+/// Adjust the layout position by `offsetSpacing`
+@property (nonatomic, assign) CGFloat offsetSpacing;
+
 /// You can adjust the spacing relative to the keyboard when the keyboard appears. default is 0
 @property (nonatomic, assign) CGFloat offsetSpacingOfKeyboard;
 
