@@ -221,7 +221,7 @@ static void *zhPopupControllerNSTimerKey = &zhPopupControllerNSTimerKey;
             
         } completion:^(BOOL finished) {
             
-            if (finished) presentCallback();
+            presentCallback();
             
         }];
     } else {
@@ -233,7 +233,7 @@ static void *zhPopupControllerNSTimerKey = &zhPopupControllerNSTimerKey;
             
         } completion:^(BOOL finished) {
             
-            if (finished) presentCallback();
+            presentCallback();
             
         }];
     }
@@ -311,7 +311,7 @@ static void *zhPopupControllerNSTimerKey = &zhPopupControllerNSTimerKey;
                 _popupView.center = [self dismissedCenter];
                 
             } completion:^(BOOL finished) {
-                if (finished) dismissCallback();
+                dismissCallback();
             }];
             
         }];
@@ -324,7 +324,7 @@ static void *zhPopupControllerNSTimerKey = &zhPopupControllerNSTimerKey;
             _popupView.center = [self dismissedCenter];
 
         } completion:^(BOOL finished) {
-            if (finished) dismissCallback();
+            dismissCallback();
         }];
     }
 }
